@@ -11,8 +11,8 @@ export default function Hero() {
             At <strong>Harvest Expert LTD</strong>, we don’t just clean, we transform spaces.  
             From offices to homes, we restore freshness, shine, and comfort every single time.
           </p>
-          <button className={styles.cta}><Link href="https://wa.link/c80h8r">       
-            Book a Cleaning Today</Link>
+          <button className={styles.cta}>
+            <Link href="https://wa.link/c80h8r"> Book a Cleaning Today</Link>
      </button>
         </div>
       </div>
