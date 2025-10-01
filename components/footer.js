@@ -44,9 +44,9 @@ export default function Footer() {
         <div className={styles.brand}>
           <h3>Harvest Expert LTD</h3>
           <p>Professional Cleaning Services in Nigeria</p>
-          <p>Lagos, Nigeria</p>
-          <p>Phone: +234 800 123 4567</p>
-          <p>Email: info@harvestexpert.com</p>
+          <p>Onitsha, Nigeria</p>
+          <p>Phone: +234 813 844 9586 </p>
+          <p>Email: harvestexpert21@gmail.com</p>
         </div>
 
         {/* Social Media */}
