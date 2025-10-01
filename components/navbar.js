@@ -70,7 +70,8 @@ export default function Navbar() {
               <li><Link href="#testimonials" onClick={toggleMenu}>Testimonials</Link></li>
               <li><Link href="#contact" onClick={toggleMenu}>Contact</Link></li>
             </ul>
-            <button className={styles.mobileCTA}>Book Now</button>
+            <button className={styles.mobileCTA}><Link href="#cta">
+            </Link>Book Now</button>
           </motion.nav>
         )}
       </AnimatePresence>
