@@ -1,0 +1,155 @@
+// .services {
+//   padding: 3rem 1.5rem;
+//   text-align: center;
+
+//   h2 {
+//     font-size: 1.8rem;
+//     margin-bottom: 2rem;
+//     color: #003b2f;
+//   }
+
+//   .grid {
+//     display: grid;
+//     gap: 1.5rem;
+
+//     @media (min-width: 768px) {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     @media (min-width: 1024px) {
+//       grid-template-columns: repeat(4, 1fr);
+//     }
+//   }
+
+//   .card {
+//     background: #f8fdfb;
+//     padding: 1.5rem;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+//     h3 {
+//       color: #00b894;
+//       margin-bottom: 0.5rem;
+//     }
+
+//     p {
+//       color: #444;
+//       font-size: 0.95rem;
+//     }
+//   }
+// }
+
+.services {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(180deg, #f7fffd, #ecfef7);
+  position: relative;
+  overflow: hidden;
+
+  // Subtle background shimmer effect
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(0, 184, 148, 0.06), transparent 70%);
+    animation: shimmer 8s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-10%) translateY(-10%) rotate(0deg); }
+    100% { transform: translateX(10%) translateY(10%) rotate(360deg); }
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    color: #003b2f;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+
+    &::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #00b894, #019170);
+      display: block;
+      margin: 0.8rem auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 2.5rem 1.8rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 184, 148, 0.05);
+    position: relative;
+    overflow: hidden;
+
+    // Subtle glow hover effect
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 184, 148, 0.15);
+      border-color: rgba(0, 184, 148, 0.3);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(0, 184, 148, 0.08),
+        transparent
+      );
+      transition: 0.5s;
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+
+    h3 {
+      color: #00b894;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+  }
+}

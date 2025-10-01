@@ -1,0 +1,168 @@
+// 
+
+
+.footer {
+  background: #002820; // deeper, richer shade for elite tone
+  color: #f1f5f9;
+  padding: 4rem 1.5rem 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+
+  // Elegant gradient glow accent
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 30% 90%,
+      rgba(0, 184, 148, 0.12),
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+
+  /* Container Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+
+  /* Brand Section */
+  .brand {
+    flex: 1;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00b894;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0.3rem 0;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00b894;
+      }
+    }
+  }
+
+  /* Social Media Section */
+  .social {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+      color: #00b894;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.05);
+          color: #ffffff;
+          font-size: 1.4rem;
+          transition: all 0.35s ease;
+          box-shadow: 0 0 0 transparent;
+
+          &:hover {
+            background: linear-gradient(135deg, #00b894, #007a63);
+            transform: translateY(-5px) scale(1.08);
+            box-shadow: 0 10px 25px rgba(0, 184, 148, 0.4);
+          }
+
+          &:active {
+            transform: scale(0.96);
+          }
+        }
+      }
+    }
+  }
+
+  /* Bottom Bar */
+  .bottom {
+    margin-top: 3rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.2rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    letter-spacing: 0.4px;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+
+    p {
+      margin: 0;
+      opacity: 0.9;
+    }
+  }
+
+  /* Subtle floating light shimmer effect */
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+
+  .brand h3 {
+    background: linear-gradient(90deg, #00b894, #22c55e, #00b894);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shimmer 6s linear infinite;
+  }
+}

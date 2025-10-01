@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Harvest Expert LTD — Premium Cleaning Services Website
 
-## Getting Started
+A modern, elegant, and fully responsive landing page built for **Harvest Expert LTD**, a professional cleaning company providing residential, office, and commercial cleaning solutions across Nigeria.
 
-First, run the development server:
+This project was crafted with a focus on **speed, design precision, SEO performance**, and **elite brand presentation** — ensuring the company stands out as a trusted and top-tier service provider.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+✅ **Responsive & Mobile-First Design** — Optimized for all devices and screen sizes.  
+✅ **SCSS Styling Architecture** — Modular and maintainable with reusable variables and mixins.  
+✅ **Modern UI/UX Animations** — Smooth transitions, fade-in effects, and modal interactions.  
+✅ **Sticky Navigation Bar** — Smart navbar that adjusts on scroll.  
+✅ **Interactive About Section** — Includes a premium modal pop-up for “Learn More.”  
+✅ **SEO-Optimized Structure** — Proper headings, semantic HTML, and metadata ready.  
+✅ **Testimonials & Call-To-Action (CTA)** — Designed to build trust and drive instant conversions.  
+✅ **Integrated Social Media Footer** — High-quality icons for Instagram, TikTok, and Facebook.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧩 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js / React.js  
+- **Styling:** SCSS Modules  
+- **Deployment:** Vercel / Netlify (recommended)  
+- **Icons:** React Icons / Font Awesome  
+- **Fonts:** Google Fonts (Poppins, Inter)  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏗️ Project Structure
